@@ -10,6 +10,7 @@ import (
 // GetGreeting is exported but has no doc comment -> flagged by "revive"
 func GetGreeting(name string) string {
 	greeting := fmt.Sprintf("%d", name) // wrong format verb for a string -> flagged by "govet"
+	fmt.Println("greeting",greeting)
 	return greeting
 }
 
